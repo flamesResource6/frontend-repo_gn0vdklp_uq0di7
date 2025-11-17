@@ -8,16 +8,17 @@ export default function Hero() {
         <Spline scene="https://prod.spline.design/pDXeCthqjmzYX5Zk/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#030712]/20 via-[#0b1020]/40 to-[#0b1020]" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#030712]/40 via-[#0b1020]/50 to-[#0b1020]" />
+      <div aria-hidden className="absolute -top-24 left-1/2 -translate-x-1/2 h-[600px] w-[900px] bg-cyan-500/10 blur-[120px] rounded-full" />
 
       <div className="relative z-10 pt-28 pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 backdrop-blur px-3 py-1 text-xs text-white/80">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 backdrop-blur px-3 py-1 text-xs text-white/80 animate-in">
               <Sparkles className="h-3.5 w-3.5" />
               AI that learns how you learn
             </div>
-            <h1 className="mt-6 text-4xl sm:text-6xl font-semibold tracking-tight text-white">
+            <h1 className="mt-6 text-4xl sm:text-6xl font-semibold tracking-tight text-gradient">
               Your personal studying AI
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-white/70">
@@ -35,6 +36,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <div aria-hidden className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0b1020] to-transparent" />
     </section>
   );
 }
